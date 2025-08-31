@@ -1,0 +1,16 @@
+Commercial License for ESZCaptcha
+
+Copyright (c) 2025 ercan.dev
+
+Permission is hereby granted to the license holder to use this software
+in commercial projects without the obligations of the GNU General Public License (GPL),
+subject to the following conditions:
+
+1. Each license is valid for a single production website (one license per site).
+2. The license includes 6 months of support for bug fixes and general usage questions.
+3. Custom modifications, new features, or installation services are not included and require a separate agreement.
+4. Redistribution, resale, or sublicensing of the software in any form is strictly prohibited.
+5. No warranty is provided. The software is delivered "as is".
+
+For questions or to purchase additional licenses, visit https://ercan.dev
+or contact info@ercan.dev

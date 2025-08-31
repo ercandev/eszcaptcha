@@ -1,0 +1,21 @@
+<fieldset>
+  <legend>{{ text_captcha }}</legend>
+  <div class="mb-3">
+    <img id="captcha-image" src="index.php?route=extension/eszcaptcha/captcha/eszcaptcha.captcha" alt="{{ text_captcha }}" class="me-1 border rounded" />
+    <button type="button" class="btn btn-outline-secondary" id="refresh-captcha"><i class="fa-solid fa-rotate"></i></button>
+  </div>
+  <div class="mb-3 required">
+    <label for="input-captcha" class="form-label">{{ entry_captcha }}</label>
+    <input type="text" name="captcha" value="" id="input-captcha" class="form-control mb-1"/>
+    <div id="error-captcha" class="invalid-feedback"></div>
+  </div>
+  <div class="text-center small text-muted">
+    Secured by <a href="https://ercan.dev/products/eszcaptcha-opencart-captcha-extension" target="_blank" rel="noopener noreferrer">ESZCaptcha</a>
+  </div>
+</fieldset>
+<script type="text/javascript">
+  document.getElementById('refresh-captcha').addEventListener('click', function () {
+    var captchaImage = document.getElementById('captcha-image');
+    captchaImage.src = 'index.php?route=extension/eszcaptcha/captcha/eszcaptcha.captcha&' + new Date().getTime();
+  });
+</script>
